@@ -2,14 +2,12 @@ from vector import Vector
 from regression import LinearRegression
 import datagen
 import matplotlib.pyplot as plt
-import numpy as np
 
 import random
 
 
 ## ( input, expected_result )
 Sample = tuple[ Vector, float ]
-
 
 def vectorify( *args: int ) -> Vector:
     return Vector( list( args ) )
