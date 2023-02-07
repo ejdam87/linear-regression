@@ -48,7 +48,7 @@ def show_3d_regression( data: list[ Sample ],
     ax.plot_trisurf( xs, ys, zs, color="g" )
     plt.show( )
 
-model = LinearRegression( 1 )
-dataset = datagen.create_dataset( 15, 1 )
+model = LinearRegression( 2 )
+dataset = datagen.create_dataset( 15, 2 )
 model.learn( dataset )
-show_2d_regression( dataset, model )
+show_3d_regression( dataset, model )
